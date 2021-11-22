@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,8 +9,14 @@
   <title> Moringa Tribune </title>
   {% endif %}
 
+  {% block styles %}
+    <link rel="stylesheet" href="{% static 'css/basenews.css' %}">
+  {% endblock %}
+
 </head>
 <body>
+    {% include "navbar.html" %}
+
     {% block content %}
     <h1>News for {{date|date:"l d-F Y"}}</h1>
     {%endblock%}
