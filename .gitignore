@@ -1,1 +1,5 @@
-/tribune/settings.py
+# Environments 
+.env 
+.venv 
+env/ 
+venv/ 
