@@ -85,7 +85,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'tribune.wsgi.application'
 
 
-# Database
+# DATABASE
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
