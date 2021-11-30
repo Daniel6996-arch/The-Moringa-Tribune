@@ -1,5 +1,7 @@
 {%extends 'all-news/base.html'%}
 
+
+
 {% block content %}
 {{block.super}}
 
@@ -26,6 +28,16 @@
       <h2 class="text-center">There No News Items</h2>
     </div>
     {% endfor %}
+    <div class="container-fluid">
+
+      <form  action="{%url 'newsToday'%}" method="post">
+        {%csrf_token%}
+    
+        {{ letterForm }} 
+        <input type="submit" value="Subscribe">
+      </form>
+    
+    </div>
   
 </div>
 
